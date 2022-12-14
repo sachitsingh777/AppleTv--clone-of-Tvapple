@@ -14,38 +14,46 @@ nav img{
     width:100%;
 }
 
+.flex-wrap{
+    position: relative;
+    overflow: hidden;
+    height:200px; 
+    margin:20px;
+}
+
 .flex{
-    width:15%;
-    display: flex;
-}
-/* #popular{
-    width:15%;
-    display: flex;
+    position: absolute;
+    width:151%;
+    margin:10px;
+    
 }
 
-#season{
-    width:15%;
-    display: flex;
-}
-#original{
-    width:15%;
-    display: flex;
+.item{
+    width:332px;
+    display:inline-block;
+    border-radius: 10px 10px;
 }
 
-#appletv{
-    width:15%;
-    display: flex;
+.btn{
+    position: absolute; 
+    width:100%;
+    height:50px;
+    bottom:50px;
+    border: 10px solid red;
+    justify-content:space-between;
+    align-content: space-between;
 }
-#popular{
-    width:15%;
-    display: flex;
+.item img{
+    width:100%;
+    border-radius: 30px;
 }
-
-#season{
-    width:15%;
-    display: flex;
+.b1{
+   font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color:transparent;
+    transition: 0.5s;
+    border:10px solid blue;
+    
 }
-#original{
-    width:15%;
-    display: flex;
-} */
