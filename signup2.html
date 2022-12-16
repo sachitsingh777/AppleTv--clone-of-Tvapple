@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+
+        #container{
+            position: relative;
+           width:400px;
+           height:500px;
+           top:50%;
+           left:50;
+           text-align: center; 
+          color:white;
+          border: 1px solid red;
+
+
+          justify-content: center;
+    border: 2px solid red;
+    
+    height:400px;
+    background: grey;
+    align-items: center;
+    width:500px;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(1);
+    
+    transition: transform 0.4s , top 0.4s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <form id="form">
+            <input type="text"  id="fname" placeholder="First Name">
+            <input type="text"  id="lname" placeholder="Last Name">
+            <input type="email" id="email" placeholder="Enter your Email">
+            <input type="password"  id="password" placeholder="Enter your Password">
+            <input type="submit" value="submit">
+        </form>
+    </div>
+</body>
+<script>
+    let  form=document.getElementById("form");
+        let filldata=JSON.parse(localStorage.getItem("userdetail"))||[]
+         form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let data={
+                email: form.email.value,
+                fname: form.fname.value,
+                lname: form.lname.value,
+                password: form.password.value
+
+
+            };
+            filldata.push(data);
+            console.log(filldata);
+            localStorage.setItem("userdetail",JSON.stringify(filldata));
+        })
+</script>
+</html>

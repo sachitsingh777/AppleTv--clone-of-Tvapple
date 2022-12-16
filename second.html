@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second</title>
+    <style>
+        nav{
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    position:sticky;
+    top:0;
+}
+
+#navspace{
+    width:800px;
+    color:aliceblue;
+    background-color:black;
+}
+nav img{
+    width:60px;
+}
+#section1{
+    width:100%;
+  height:100vh;
+  border:2px solid blue;
+}
+#video{
+    width:120%;
+    /* height:100vh; */
+    
+    padding-right: 500px;
+}
+section{
+    width:100%;
+    border:2px solid red;
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="#home"><img src="https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/88/79/7b/88797be4-8033-392e-5124-237d9677bcac/source/1200x675mf.jpg" alt=""></a>
+        </div>
+        <div id="navspace"></div>
+        <div>
+            <input type="search" name="" id="search" placeholder="Search">
+            <button onclick="openmain()">Sign In</button>
+        </div>
+    </nav>
+    <section>
+        <div id="section1">
+         <!-- <video autoplay muted loop id ="videoplay"><source src="rain.mp4" type="video/mp4"></video> -->
+        <video id="video" muted loop="" preload="metadata" autoplay="" src="video/acal.mp4" ></video>
+        <div id="content1">
+         <div id="c1">
+         <h1>AVATAR</h1>
+         <h4>SCI-FI</h4>
+        </div>
+        <div id="c2">
+ 
+        </div>
+        </div>
+     </div>  
+     </section>
+</body>
+</html>
