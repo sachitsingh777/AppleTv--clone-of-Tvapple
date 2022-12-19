@@ -417,6 +417,10 @@ width: 100%;
 .slide{
     display:block;
 }
+.loginpart:nth-child(2){
+    color:blue;
+
+}
 
     </style>
 </head>
@@ -1303,8 +1307,10 @@ done.addEventListener("click",()=>{
     console.log("ok");
     if(login.style.display=="none"){
         login.style.display="block";
+        container.style.display="none";
     }else{
         login.style.display="none";
+        container.style.display="block";
     }
 });
 
