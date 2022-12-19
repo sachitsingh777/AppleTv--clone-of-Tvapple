@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/af84249d9e.js" crossorigin="anonymous"></script>
+    <style>
+
+        body{
+            background:rgba(165, 165, 165, 0.616);
+        }
+        .login{
+            display:none;
+            position: fixed;
+
+position: absolute;
+top:50%;
+left:50%;
+width: 400px;
+padding:40px;
+transform: translate(-50%,-50%) ;
+background: rgba(163, 163, 163, 0.6);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+        }
+
+        .container{
+            display: none;
+     position: fixed;
+
+position: absolute;
+top:50%;
+left:50%;
+width: 400px;
+padding:40px;
+transform: translate(-50%,-50%) ;
+background: rgba(0,0,0,.6);
+box-sizing: border-box;
+box-shadow: 0 15px 25px rgba(0,0,0,.6);
+border-radius: 10px;
+        }
+
+
+.user{
+    position:relative;
+}
+.user input{
+    width:100%;
+    padding:10px 0;
+    font-size:16px;
+    color:#fff;
+    margin-bottom:30px;
+    border:none;
+    border-bottom: 1px solid #fff;
+    outline:none;
+    background: transparent;
+}
+
+.user input:focus~label, .user input:valid~label{
+    top:-20px;
+    left:0;
+    color:#03e9f4;
+    font-size: 12px;
+}
+.submit:hover{
+    background: #03e9f4;
+    color:#fff;
+    border-radius: 5px;
+    box-shadow:  [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color];
+}
+
+
+#form{
+position: relative;
+display: inline-block;
+padding: 10px 20px;
+
+}
+
+
+nav{
+    background-color: black;
+    justify-content: space-between;
+    display: flex;
+    position:sticky;
+    top:0;
+    align-items: center;
+    padding-top:5px;
+}
+
+#navspace{
+    width:800px;
+    color:aliceblue;
+    background-color:black;
+}
+nav img{
+    width:60px;
+}
+.search{
+    width: 300px;
+    height:25px;
+    border-radius: 10px;
+    border:2px lightseagreen;
+}
+.sign{
+    border: none;
+    outline: none;
+    border-radius:10px;
+    background: #06a8f3c0;
+    padding:5px;
+    
+}
+
+#section1{
+    width:100%;
+  height:150vh;
+}
+#video{
+    width:100%;
+    
+    
+  
+}
+
+
+
+
+.nav2{
+  width:100%;
+  height:100px;
+  background-color: rgb(53, 50, 50);
+ bottom:0;
+  position: sticky;
+  display: flex;
+}
+
+.nav2 h3,.nav p{
+color:white;
+}
+.nav p{
+  color:white;
+}
+
+.highlight{
+  padding-left: 50px;
+  margin-right: 400px;
+}
+.trial button{
+  margin-top: 20px;
+  height:38px;
+  background-color: #fff;
+  width:200px;
+  border:none;
+  outline:none;
+}
+ section h2,h4{
+    margin-left: 20px;
+ }
+ section h4{
+    color:gray;
+ }
+
+.flex-wrap{
+   position: relative;
+    overflow: hidden;
+    height:150px; 
+    margin:20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.flex{
+    position: absolute;
+    /* width:151%; */
+    margin:5px;
+    
+}
+
+.item{
+    width:250px;
+    display:inline-block;
+    border-radius: 10px 10px;
+}
+.item:hover{
+    cursor:grab;
+    border:3px solid lightseagreen ;
+    border-radius:30px;
+    filter:blur(.3px)
+}
+
+.carousel{
+  position:absolute;
+    width:1300px;
+    justify-content:space-between;
+    align-content: space-between;
+    top:40%; 
+}
+.item img{
+    width:100%;
+    border-radius: 31px;
+}
+.b1{
+   font-size: 30px;
+    border: none;
+    outline: none;
+    color: black;
+    background-color:transparent;
+    transition: 0.5s;
+ padding-right: 1230px;
+    
+}
+.b2{
+    font-size: 30px;
+     border: none;
+     outline: none;
+     color: black;
+     background-color:transparent;
+     transition: 0.5s;
+ }
+
+ .black{
+    width:100%;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+  }
+.black-img{
+  width:50%;
+  margin:auto;
+  display:flex;
+  align-self: center;
+  /* margin-left: 80px; */
+} 
+.black h1,.black h2,.black h4{
+  color:white;
+}
+.black p{
+  color:blue;
+}
+.black-img img{
+  width:100%;
+} 
+.subblack>img{
+  width:3%;
+  display: block;
+  text-align: center;
+  padding-left: 650px;
+}
+
+ 
+
+
+
+  
+
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+.faq {
+  position: relative;
+  background: #fff;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 10px
+          rgba(0, 0, 0, 0.5));
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;;
+}
+
+.acc{
+  position: relative;
+  width: 900px;
+  margin-left: 250px;
+}
+
+.title {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.content-acc {
+  margin-top: 35px;
+  margin-right: 50px;
+}
+
+.question-answer {
+  width: 100%;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acc-img {
+  position: relative;
+  width: 320px;
+}
+
+.title-question {
+  margin: 1.4rem 0rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #000;
+}
+
+.question-carousel {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.up{
+  display: none;
+}
+
+.answer {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  display: none;
+}
+
+.show-text .answer {
+  display: block;
+}
+
+.show-text .up {
+  display: inline;
+}
+
+.show-text .down {
+  display: none;
+}
+.useremail{
+    width:300px;
+    height:30px;
+    border-radius: 10px;
+    padding:5px;
+    margin-bottom:5px;
+}
+.userpass{
+    width:300px;
+    height:30px;
+    border-radius: 10px;
+    padding:5px;
+    margin-top: 5px;
+}
+.login-btn{
+    width:100px;
+    font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height:20px;
+	border: 2px solid;
+	padding: 0.2rem;
+    border-image: linear-gradient(90deg, turquoise, greenyellow) 1 ;
+    border-radius: 1rem;
+    align-self: center;
+    background-color: rgba(3, 58, 58, 0.568);
+}
+.submit{
+    width:100px;
+    font-size: 1.6rem;
+	display: grid;
+	place-items: center;
+	min-height:20px;
+	border: 2px solid;
+	padding: 0.2rem;
+    border-image: linear-gradient(90deg, turquoise, greenyellow) 1 ;
+    border-radius: 1rem;
+    background-color: rgba(3, 58, 58, 0.568);
+
+}
+
+.video-container{
+    position: relative;
+    width:100%;
+}
+.slide video{
+width: 100%;
+}
+
+.next{
+    right:10px;
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    color:black;
+    background-color:transparent;
+    padding: 8px 18px;
+    font-size: 20px;
+}
+.prev{
+    left:10px;
+    cursor: pointer;
+    position: absolute;
+    top:45%;
+    color:black;
+    background-color:transparent;
+    padding: 8px 18px;
+    font-size: 20px;
+}
+.slide{
+    display:block;
+}
+
+    </style>
+</head>
+<body>
+
+
+
+
+
+    <nav>
+        <div>
+            <a href="./home2.html"><img src="https://is4-ssl.mzstatic.com/image/thumb/Features113/v4/88/79/7b/88797be4-8033-392e-5124-237d9677bcac/source/1200x675mf.jpg" alt=""></a>
+        </div>
+        <div id="navspace"></div>
+        <div>
+            <input class="search" type="search" name="" id="search" placeholder="Search">
+            <button class="sign" id="sign"><i class="fa-solid fa-user"></i>Sign In</button>
+        </div>
+    </nav>
+    
+     <section>
+        <div class="video-container">
+            <div class="slide">
+                <video id="video" muted loop="" preload="metadata" autoplay="" src="video/vid1.mov"></video>
+                <div class="textt"></div>
+            </div>
+            <div class="slide">
+                <video id="video" muted loop="" preload="metadata" autoplay="" src="video/vid2.mp4"></video>
+                <div class="textt"></div>
+            </div>
+            <div class="slide">
+                <video id="video" muted loop="" preload="metadata" autoplay="" src="video/vid3.mp4"></video>
+                <div class="textt"></div>
+            </div>
+            <div class="slide">
+                <video id="video" muted loop="" preload="metadata" autoplay="" src="video/vid4.mp4"></video>
+                <div class="textt"></div>
+            </div>
+            <div class="slide">
+                <video id="video" muted loop="" preload="metadata" autoplay="" src="video/cha.mp4"></video>
+                <div class="textt"></div>
+            </div>
+            <span class="prev" onclick="move(-1)">&#10094;</span>
+            <span class="next" onclick="move(1)">&#10095;</span>
+        </div>
+     </section>
+
+
+
+     <div class="login" id="login">
+        <button id="close-btn">&times;</button>
+        <div class="sublogin">
+            <div class="loginpart">
+                <img src="" alt="">
+                <h2>Sign in with your Apple ID</h2>
+                <h4>You will be Signed in to Apple TV & Apple Music</h4>
+                <form id="form1" >
+                  <input type="text" class="useremail" id="useremail" placeholder="Enter Your Apple ID" >
+                <input type="password" class="userpass" name="" id="userpass" placeholder="Enter your Password">
+                <input type="submit" value="Submit" class="login-btn">  
+                </form>
+                
+                
+            </div>
+            <div class="loginpart">
+                <h3 id="createid">Create New apple ID</h3>
+                <h4>Forgot Apple ID or Password</h4>
+            </div>
+        </div>
+     </div>
+
+    <div class="container" id="container">
+        <button id="close-btn">&times;</button>
+       <h2>Apple create id</h2>
+        <form id="form">
+            <div class="user">
+                <label >First Name</label>
+                <input type="text"  id="fname" placeholder="First Name">
+            </div>
+            <div class="user">
+                <label >Last Name</label>
+               <input type="text"  id="lname" placeholder="Last Name">
+            </div>
+            
+            <div class="user">
+                <label >Email</label>
+                 <input type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="user">
+                <label >Password</label>
+                <input type="password"  id="password" placeholder="Enter your Password">
+            </div>
+           <input class="submit" id="done" type="submit" value="submit">
+            
+        </form>
+    </div>
+
+
+<hr>
+
+    
+    <section>
+        <h2>watch premiers for Free</h2>
+       <div class="flex-wrap">
+        <div id="free" class="flex">
+        <div class="item" > <a href="./second.html"><img src="https://is5-ssl.mzstatic.com/image/thumb/xq9mcYu6NXUtGcDJMMfc5w/738x416.webp" alt=""></a></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/EuF6BWsgBeic_Ap2qeAGBQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Auxgchkiva7ORjAQy9DP6w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/PWsYggMXgU6kQrxaB3MZPQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/C7vq4me467uKBCWL8QZA6g/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/7SeRlnCzKlgeqrg6-ixkig/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/qYEYYvFXN2O4zEuCcBSbjw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/nnWkHXH4wyIt0sZovHx0tA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/BG3rKYXaPe9KkpZOZUjj_w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/L4WNJNV3nbmyAL6MQSeGuw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Jj8T9VNcfHfMQ4fDwp31-Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt=""></div>
+    </div>
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+      
+    </section>
+
+<hr>
+
+   <section>
+     <h2>Most Popular</h2>
+    <div class="flex-wrap">
+     <div id="popular"  class="flex">
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/lgskq6n1xkUI5DOyA5tWWQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/EuF6BWsgBeic_Ap2qeAGBQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Auxgchkiva7ORjAQy9DP6w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/C7vq4me467uKBCWL8QZA6g/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/PWsYggMXgU6kQrxaB3MZPQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/IZLh7W9XMi2iYTPqqFwRYg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/xq9mcYu6NXUtGcDJMMfc5w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/7SeRlnCzKlgeqrg6-ixkig/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt=""></div>
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div> 
+    </div>
+   </section>
+   <hr>
+    
+    <section>
+        <h2>Watch Entire Seasons</h2>
+      <div class="flex-wrap">
+      <div id="season"  class="flex">
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/SEsiWD2cTDShiJqUtRPAxg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/78-I7VenST4ztZYfwMf6AQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/WTDZpzkQlaatpb1X4w9jZg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/NHLksWLSZpTcIw36-n7vWA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/vPnF3gIE_xEMoXPI1SyluA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Jj8T9VNcfHfMQ4fDwp31-Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/f5MpOY_Tglwyv9W9lwutqg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/vB48H4eBprLJ-WdCBTA6cw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/ewq0-5ZSairVdRtcg43s0w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt=""></div>
+    </div>  
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>  
+    </section>
+    
+    <hr>
+     <section>
+        <h2>Latest Originals</h2>
+        <div class="flex-wrap" style="height: 150px;">
+       <div id="original"  class="flex">
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/lgskq6n1xkUI5DOyA5tWWQ/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/BG3rKYXaPe9KkpZOZUjj_w/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/h3TFbeh9Dz-zmR7hMf0Jcw/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/ba3Q2gHzrcpC69JvKRy_bg/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/EuF6BWsgBeic_Ap2qeAGBQ/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Ogd5vHGYkYpUIzgQCTqBXQ/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Auxgchkiva7ORjAQy9DP6w/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/xEt4MZZlgE0IeQMnUSG65Q/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CUcDZ-At1_oNSxrwvuRguA/1478x832.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CXnyehPcDHEauavhg0D79Q/1478x832.webp" alt=""></div>
+        
+        </div> 
+        <div class="carousel">
+            <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+            <button type="button" onclick="next(this)"  class="b2">></button>
+        </div>
+    </div>
+     </section>
+     <hr>
+    
+        <section>
+            <h2>Included With Apple TV+</h2>
+            <h4>Watch Unforgettable hits as a limited-time subscriber bonus.</h4>
+           <div class="flex-wrap">
+      <div id="appletv"   class="flex">
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/7f/a6/73/7fa673cd-a374-f92b-39ce-d6225bc2085c/d4c433fc-e095-43b1-a773-f9dc31b61fe3.lsr/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/uOy_uvKZZkurSII-QkH1cg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Video113/v4/ce/7b/70/ce7b7099-6a2c-9183-0da7-40fb57571a00/Bourne_Ultimatum_3840x2160_CoverArt.lsr/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/8CWKYRVlULbruOTTdkrGLg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/uAYqXpEFOAAc24vKK-dCCw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/i3-hIW27SBl3wPL7E_j6yQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Video123/v4/4a/9c/3f/4a9c3ffb-967e-434d-4159-87c6af100b9f/Bourne_Legacy_3840x2160_CoverArt.lsr/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Video123/v4/b0/b0/3b/b0b03b51-a34c-4eef-2b2d-db25e87e2371/PAR_RON_BUR_WW_ARTWORK_EN_3840x2160_1MC8ZR000000CL.lsr/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/Video113/v4/a4/39/be/a439be29-4c3b-278f-194f-b914d7fa5bd7/PAR_MISSION_IMPOSSIBLE_3_WW_ARTWORK_EN_3840x2160_1MF9LK000000CH.lsr/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/lZToYMV0Lfuk_UdUBl_QIA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/ofDY_rzY40a6IueKUtbiog/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/uaSHpZb6h7ya_VYLO_kcCw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/qOEFNUs-ZST5f22Azlc0lw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/MrBBAvK_IzPmL1x5NOktag/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/4npuGnQJGvWXSpLsEjgtXQ/738x416.webp" alt=""></div>
+    </div>  
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div> 
+        </section>
+        <hr>
+       <section>
+         <h2>Future Releases</h2>
+      <h4 style="color:gray">
+        Add to Up Next now.
+      </h4>
+<div class="flex-wrap">
+      <div id="release" class="flex">
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/31/30/9c/31309c13-aeee-fe56-ee48-381a4bec47fd/9230471d-171a-4347-8f1a-59267f718c32.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features122/v4/28/3f/e5/283fe53f-df6c-2e78-bfdd-18508fa82a6a/db52f93f-c6cc-4e7f-aa7c-f93856a95f55.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/76/95/90/76959068-90b5-4f88-c342-5db27696da8e/8f0c8afb-a007-4426-b535-0aa57f4d6777.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/Features112/v4/8e/5f/ef/8e5fef83-e31c-6bfa-eae0-cc6a55bfdb61/33708d12-0019-435e-82c3-a861e0ddd2fe.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/b2/d8/d9/b2d8d98c-d95c-0c9b-6bec-494d1dba21e9/fd33af20-02e5-4807-9b6b-83a7f5635f0f.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Features112/v4/54/00/68/54006836-b2c2-c27b-f43f-6c324c16ebd7/291dad5b-5bd9-4a67-b1a1-b8828fc73742.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Features122/v4/d2/0a/96/d20a9637-d046-eaa1-fee6-d9efb9f05225/445124ef-f7e0-42bd-9613-21b4bc5ac433.lsr/838x472fe.webp" alt=""></div>
+       
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div> 
+    </div>
+       </section>
+      
+       <hr>
+    
+    <div id="section2" ></div>
+    <section>
+        <h2>Historical Dramas</h2>
+      <div class="flex-wrap">
+      <div id="historical" class="flex">
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/lgskq6n1xkUI5DOyA5tWWQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Tb1jarRHaWN_SFiMjZcDHw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/jvpbfkNAZaLIN3DZJUDX8Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/vkRecJ7JSiYQecCMWMmzOA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/kjrFHClZ3Bt-pT0MJnwdFw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/8593WFOGVTTA1ncIGrL37g/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/2hSgeI8AyyKcpu_6Rhwg1w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp" alt=""></div>
+      
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>  
+    </section>
+    <hr>
+    <section>
+        <h2>Remarkable Women</h2>
+
+       <div class="flex-wrap">
+      <div id="little" class="flex">
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CXnyehPcDHEauavhg0D79Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/3iAbZQ4pznOpDRenkvOhNA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/D1SCGzM1ESBh-SIkHwcvUQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/AWDRdQz0nepFpnsUNiTDuw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CUcDZ-At1_oNSxrwvuRguA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/XiXPs1AKOFQE7cq7AVlJeQ/738x416.webp" alt=""></div>
+    </div>  
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div> 
+    </section>
+    <hr>
+    <section>
+        <h2>Soaring musical Moments</h2>
+        <div class="flex-wrap">
+       <div id="musical" class="flex">
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/ZYv1Yo9zcK029EjWlyRSYg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/le6mxqLNaXH47MHIH7stzw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/f5MpOY_Tglwyv9W9lwutqg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/h3TFbeh9Dz-zmR7hMf0Jcw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/cyRvgYnPlaVn3rN2SDdW1Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/owNSUO3F109RC75YDPMY7A/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/xq9mcYu6NXUtGcDJMMfc5w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/K-nsm8mEVNAAnevMTyya7g/738x416.webp" alt=""></div>
+
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+    </section>
+    <hr>
+    <section>
+        <h2>Ride Along With the Stars of TV+</h2>
+      <div class="flex-wrap">
+        <div id="stars" class="flex">
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/URvVdugODuaGFWJv1ukmPA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/VDIfUtn5C9P5IZGN2h8r9w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Cr7foJGHmxwDdGygTHEdzQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/2SN7uXfYf5kg8Mk0pVTKpg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/k6MAXIYbfz2pxreZytHTRQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/zpSpXbQn7pUKBLESkpPF2Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/0HEEvVlbpmo8hZASOlkNEA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/9ArStJ1H_0AOnwHKKCveYg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/GS9yhh6eYD_4_4Ov6qf2OA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/dRwD1d1ZBn8WcEf5Yc3Viw/738x416.webp" alt=""></div>
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>  
+    </section>
+    <hr>
+   <section>
+    <h2>Cuddly Critters</h2>
+    <div class="flex-wrap">
+      <div id="cuddly" class="flex">
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/ba3Q2gHzrcpC69JvKRy_bg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/r85VE266WcKhz9SdLwhb0A/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/_dJgnWG8W30_qMRZYCEx-Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/ztml996EQMN-hkl3rjIlsw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/StRHuSLsy2WhrdoPNZ07xQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/_Kq-GgPdDxxqWtSZ9GbHug/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/SWMzy9YGQFSOSHOy5DoJ2w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/_WDO4pxq_b43sYn1s-nJQg/738x416.webp" alt=""></div>
+       
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+   </section>
+    
+   <hr>
+    <div id="section3"></div>
+   <section>
+    <h2>All Feature Films</h2>
+    <div class="flex-wrap">
+       <div id="feature" class="flex">
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/lgskq6n1xkUI5DOyA5tWWQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/a_voEGGOjHGvUUhwrbStXQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CXnyehPcDHEauavhg0D79Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/CUcDZ-At1_oNSxrwvuRguA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/_vkF4kzNiSCdmWsVNp0gjw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/vkRecJ7JSiYQecCMWMmzOA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/_dJgnWG8W30_qMRZYCEx-Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/oANBVngpEJDvHRhdyozySA/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/xwiVfxV1l5Tfy6-1uQ25_Q/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/d6sprLP3-1W-OlED4ZlzOg/738x416.webp" alt=""></div>
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+   </section>
+   <hr>
+    <section>
+        <h2>Emancipation Is Here</h2>
+        <div class="flex-wrap">
+       <div id="here" class="flex">
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/2a/32/dd/2a32dd38-ce88-1ba2-3652-4f06cc1f78a2/26916612-9402-47de-8edf-da6774933127.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Features112/v4/42/8f/e8/428fe81b-7f27-0f78-7c2e-f83c3b1578f0/531a30ee-5b9a-4953-a959-1c7e2cc537aa.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Features122/v4/b5/f4/a5/b5f4a514-0378-fbbf-8524-504c84f275df/d4e55c15-9bd0-4608-b740-8749953a589c.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/a8/95/fb/a895fb3d-44a9-7658-20af-6f8c3a337008/c257701d-c2aa-4187-8029-7cbd3c3ada40.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/Features122/v4/4c/a6/b7/4ca6b7fc-6d99-9a9b-9f98-f362f928f511/06fe86e7-37db-400f-96fe-08ec63f89bcb.lsr/838x472fe.webp" alt=""></div>
+       
+    </div> 
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+    </section>
+    <hr>
+    <section>
+        <h2>Ted Lasso:Winner of 4 Emmy Awards</h2>
+
+        <div class="flex-wrap">
+       <div id="sport" class="flex">
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/69/26/cb/6926cb49-3cdd-7db7-69c2-ed1d86d24265/e864cc33-c756-468f-983a-c8c1c2bb1adb.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/44/f2/ac/44f2aca2-6715-4154-8bc9-ffc1e1d6689a/61a6e79a-db85-4774-b3e9-243c554f899d.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/Features122/v4/f1/0c/a2/f10ca2b9-225f-d9bb-afeb-d5a21846cf75/0da18062-dcc4-45f5-855d-d3f45a6653cb.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/16/3c/3d/163c3d04-997e-1320-ae31-280552aa75a2/adb13250-11db-49f4-93dd-f81cf6e1d86f.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/Features122/v4/12/3f/3d/123f3d42-a67d-8bf2-5098-44a3a3fecfe9/43c984ce-90d6-42c9-b837-8e18ec530e86.lsr/838x472fe.webp" alt=""></div>
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/Features112/v4/d0/fe/46/d0fe468f-a5bb-e698-d0c2-ca3e1b5f5fae/270aeaad-92dd-41c6-8c42-ef1dd046355e.lsr/838x472fe.webp" alt=""></div>
+        
+    </div>
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div> 
+    </div>
+    </section>
+    <hr>
+    <section>
+        <h2>All Drama Series</h2>
+      <div class="flex-wrap">
+       <div id="drama" class="flex">
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/EuF6BWsgBeic_Ap2qeAGBQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/gkWjLqLfF8Pahc6a6Udtxg/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/PWsYggMXgU6kQrxaB3MZPQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is4-ssl.mzstatic.com/image/thumb/C7vq4me467uKBCWL8QZA6g/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/738x416.webp" alt=""></div>
+    </div>
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>  
+    </section>
+    <hr>
+    <section>
+        <h2>All Comedy Series</h2>
+        <div class="flex-wrap">
+      <div id="comedy" class="flex">
+        <div class="item"><img src="https://is2-ssl.mzstatic.com/image/thumb/GT66HoV8VJL1IZwaqos_TQ/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is3-ssl.mzstatic.com/image/thumb/Auxgchkiva7ORjAQy9DP6w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/xq9mcYu6NXUtGcDJMMfc5w/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is1-ssl.mzstatic.com/image/thumb/IyvoDdhWEjtSADaSryepIw/738x416.webp" alt=""></div>
+        <div class="item"><img src="https://is5-ssl.mzstatic.com/image/thumb/BG3rKYXaPe9KkpZOZUjj_w/738x416.webp" alt=""></div>
+    </div>  
+    <div class="carousel">
+        <button type="button" onclick="prev(this)" class="b1"> < </i></button>
+        <button type="button" onclick="next(this)"  class="b2">></button>
+    </div>
+    </div>
+    </section>
+    
+    
+    <div id="series" class="flex"></div>
+    <div id="nonfiction" class="flex"></div>
+    <div id="funforall" class="flex"></div>
+
+
+
+    <hr>
+   <div class="black">
+        <div class="subblack">
+            <img src="https://tv.apple.com/assets/brands/TV_App_Logo-d343000dfd3ca454ca8705a7aa7dcf4f.png" alt="">
+            <h1>Watch Apple TV+ here or anywhere.</h1>
+            <h4>Find Apple TV+ on the Apple TV app, available on Apple devices, smart TVs, and more.</h4>
+            <p>See all supported devices ></p>
+            <div class="black-img">
+                <div><img src="https://tv.apple.com/assets/icons/product_landing_apple_tv_wht-2d0f1bf87f69645b296f58815bae784c.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/product_landing_iPhone_wht-8ef88627a27c66699f368cc429cc94a8.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/product_landing_iPad_wht-ac93596ed7aeb5e1c15ba18bcb7bfd13.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/product_landing_mac_wht-37e6f73080a15fe8a35b85e7ba8f5468.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/product_landing_airplay_wht-f348507fa5bdc6b005b126f0654aa663.png" alt=""></div>
+            </div>
+            <h2>See it on your big screen.</h2>
+            <p>Set up your device</p>
+            <p>Explore compatible devices</p>
+            <div class="black-img">
+                <div><img src="https://tv.apple.com/assets/icons/banner_usb_lrg_wht-67ed29cf6e5f5add9b2814937f976197.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/banner_tv_lrg_wht-e0ef12292435df4d9416312f322dbe32.png" alt=""></div>
+                <div><img src="https://tv.apple.com/assets/icons/banner_controller_lrg_wht-5eca7993879258c2ff5e8425055643b6.png" alt=""></div>
+            </div>
+            <p></p>
+        </div>
+    </div>
+   
+    <hr>
+   <div class="FAQ">
+    <h1 class="title">Question Answer</h1>
+    <main class="acc">
+        <div class="faq-img">
+            <img src="" alt="" class="acc-img">
+        </div>
+        <div class="content-acc">
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                      What is Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        Apple TV+ is a streaming service from Apple. It features exclusive Apple Original shows and movies from some of the industry's top talent, with new premieres arriving each month. Browse all of the available content on Apple TV+ inside the Apple TV app on the "Apple TV+" tab or here on tv.apple.com.
+                    </p>
+                </div>
+            </div>
+          
+             <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        What does Apple TV+ include?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        
+                        Apple TV+ includes Apple Original films and series-which are original shows and movies made exclusively for Apple. It also includes free access for anyone to watch Friday Night Baseball, provided through Apple TV+ in partnership with MLB (Major League Baseball). New shows and movies are being added to the streaming service often, so browse inside the Apple TV app or visit tv.apple.com often to see new releases.
+                    </p>
+                </div>
+            </div>
+
+        
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        Where can I watch Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        
+               
+              Apple TV+ is an exclusive streaming subscription available in the Apple TV app. You can find Apple TV app on many of your favorite Apple devices. Plus, find the app on many smart TVs, streaming devices, game consoles, and some select cable boxes.
+                    </p>
+                </div>
+            </div>
+           
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        Can I watch Apple TV+ on my phone?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                       
+                        Apple TV+ is a streaming service that lives inside the Apple TV app-an app that brings Apple TV+ together with other streaming service subscriptions that you add. You can find the Apple TV app on iPhone, iPad, Apple TV 4K or HD, plus on many streaming devices and smart TVs like Roku, Samsung, LG, Panasonic, and more.
+                    </p>
+                    </div>
+            </div>
+         
+           <div class="question-answer">
+            <div class="question">
+                <h2 class="title-question">
+                    How to watch Apple TV+ on Android or Windows?
+                </h2>
+                <button class="question-carousel">
+                    <span class="up"><i class="fas fa-chevron-up"></i></span>
+                 <span class="down"><i class="fas fa-chevron-down"></i></span>
+                </button>
+            </div>
+            <div class="answer">
+                <p>
+                    
+The easiest way to watch Apple TV+ on an Android phone or Windows device is to visit tv.apple.com. There, you can still sign in with an Apple ID, add Apple Original shows and movies to your Up Next watchlist, and keep track of what you're watching.
+</p>
+ </div>
+        </div>
+            
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        What movies are on Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        There are many movies to choose from on Apple TV+ and new Apple Original films are being added frequently. The best way to see what movies are on Apple TV+ is to browse the Apple TV+ tab inside the Apple TV app or here on tv.apple.com. You'll find many award-winning films to choose from, like Academy Award-winner for Best Picture CODA or the critically-acclaimed The Tragedy of Macbeth. Or choose from hits like Greyhound, Swan Song, Wolfwalkers, and more.
+                    </p>
+                    </div>
+            </div>
+         
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        What can I watch on Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                       
+                        More Apple Original series are being added to the TV app frequently, so check back often to discover new TV shows on Apple TV+. Start by browsing in the Apple TV+ tab on the Apple TV app or here on tv.apple.com. You'll find hits like the Emmy-winning Ted Lasso, critically-acclaimed The Morning Show, and sci-fi epic Foundation, plus new and popular shows like Severance, Slow Horses, and WeCrashed.
+                    </p>
+                    </div>
+            </div>
+           
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        How do I get Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        
+                        You can subscribe to Apple TV+ inside the Apple TV app on your mobile or living room device or on tv.apple.com. Your subscription to Apple TV+ will use the payment method associated with your Apple ID, which is your one sign-in for all things Apple. With one Apple account, it's easy to manage your subscription in Settings on any device or on tv.apple.com.
+                    </p>
+                    </div>
+            </div>
+           
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        Can I get Apple TV+ for free?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                     
+There are a few ways to try Apple TV+ for free. First, try 7 days of Apple TV+ for free by starting a trial in the Apple TV app on your iPhone, iPad, Apple TV 4K or HD, or on any streaming device. If you've recently purchased Apple hardware that includes a 12-month, 6-month, or 3-month or other complimentary free trial of Apple TV+, this offer will automatically appear in the Apple TV app when signed in with the Apple ID associated with your recent hardware purchase.
+</p>
+</div>
+            </div>
+           
+            <div class="question-answer">
+                <div class="question">
+                    <h2 class="title-question">
+                        How do I cancel Apple TV+?
+                    </h2>
+                    <button class="question-carousel">
+                        <span class="up"><i class="fas fa-chevron-up"></i></span>
+                     <span class="down"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                     
+The easiest way to cancel an Apple TV+ subscription is to go to Settings on an Apple device like an iPhone. Open the app, choose your name, then select Subscriptions and choose Apple TV+. You can also manage your Apple TV+ subscription at tv.apple.com. Sign in and choose the account icon in the top right corner.
+</p>            
+</div>
+            </div>
+           
+        </div>
+
+    </main>
+   </div> 
+   
+   
+ 
+   
+   
+   
+   
+   
+   
+
+        <footer>
+            <div>
+                <h6>Copyright © 2022 Apple Inc. All rights reserved.  </h6>
+               <p> Internet Service Terms | Apple TV & Privacy Cookie Policy | Support </p>
+            </div>
+            <div class="last">
+                <div>united States</div>
+                </div>
+         </footer>
+
+         <nav class="nav2">
+            <div class="highlight">
+                        <h3>All Apple Originals.</h3>
+                        <p style="color:white ">Start watching with 7 days free. Or 3 months free when you buy an eligible Apple device. <b style="color: blue;"> Terms apply. </b> </p>
+                    </div>
+                    <div class="trial">
+                        <button>Start Free Trial</button>
+                        <p style="color:gray">7 days free, then $6.99/month</p>
+                    </div>
+            
+                </nav>
+</body>
+<script>
+       let count=0;
+       function move(e){
+        count+=e;
+        slidevideo(count);
+       }
+       slidevideo(count);
+       
+   function slidevideo(i){
+    let slide=document.getElementsByClassName('slide');
+    if(i==slide.length){
+        count=0;
+        i=0;
+    }
+    if(i<0){
+        count=slide.length-1;
+        i=slide.length-1;
+    }
+
+    for(let j of slide){
+        j.style.display="none"
+
+    }
+        slide[i].style.display="block"; 
+
+   };
+
+    let  form=document.getElementById("form");
+        let filldata=JSON.parse(localStorage.getItem("userdetail"))||[];
+         form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let data={
+                email: form.email.value,
+                fname: form.fname.value,
+                lname: form.lname.value,
+                password: form.password.value
+            };
+
+            if(data.email==""&&data.password==""&&data.lname==""&&data.fname==""){
+               
+                alert("Required is Empty ");
+                return;
+            }
+            filldata.push(data);
+            console.log(filldata);
+            location.href="./signin.html"
+            localStorage.setItem("userdetail",JSON.stringify(filldata));
+        });
+
+        let form1=document.getElementById("form1");
+    let userdata=JSON.parse(localStorage.getItem("userdetail"));
+    console.log(userdata);
+    form.addEventListener("submit",(event)=>{
+            event.preventDefault();
+            let data={
+                email:form.useremail.value,
+                password:form.userpass.value,
+                
+            }
+            console.log(data);
+            console.log(userdata);
+
+
+            if(data.email==""&&data.password==""){
+               
+               alert("Required is Empty ");
+               return;
+           }
+            let flag=false;
+            for(let x=0;x<userdata.length; x++){
+                if(data.email==""&&data.password==""){
+               
+               alert("Required is Empty ");
+               return;
+           }
+                if(userdata[x].email==data.email && userdata[x].password==data.password){
+                    flag=true;
+                    break;
+                }
+            };
+            if(flag==true){
+                location.href="./home2.html"
+            }else{
+                alert("Wrong Credentials");
+            }
+        });
+
+         
+
+
+
+        function next(s){
+    let main=s.parentElement.parentElement.children[0];
+    console.log(main);
+let item=main.getElementsByClassName("item");
+
+      main.append(item[0]);
+};
+
+function prev(s){
+    let main=s.parentElement.parentElement.children[0];
+    console.log(main);
+let item=main.getElementsByClassName("item");
+    main.prepend(item[item.length-1]);
+};
+
+
+
+const questions = document.querySelectorAll('.question-answer');
+
+questions.forEach(function(question) {
+    const btn = question.querySelector('.question-carousel');
+    btn.addEventListener("click", function() {
+        questions.forEach(function(item) {
+            if (item !== question) {
+                item.classList.remove("show-text");
+            }
+        })
+        question.classList.toggle("show-text");
+        
+    })
+});
+
+let sign=document.getElementById("sign");
+let login=document.getElementById("login");
+sign.addEventListener("click",()=>{
+    console.log("ok");
+    if(login.style.display=="none"){
+        login.style.display="block";
+    }else{
+        login.style.display="none";
+    }
+});
+let create=document.getElementById("createid");
+
+let container=document.getElementById("container");
+create.addEventListener("click",()=>{
+    console.log("ok");
+    if(container.style.display=="none"){
+        container.style.display="block";
+        login.style.display="none";
+
+    }else{
+        container.style.display="none";
+        login.style.display="block";
+    }
+});
+let done=document.getElementById("done");
+done.addEventListener("click",()=>{
+    console.log("ok");
+    if(login.style.display=="none"){
+        login.style.display="block";
+    }else{
+        login.style.display="none";
+    }
+});
+
+
+let close=document.getElementById("close-btn");
+close.addEventListener("click",()=>{
+    login.style.display="none";
+    container.style.display="none";
+});
+
+let search=document.getElementById("search").addEventListener("click",()=>{
+
+})
+</script>
+</html>
